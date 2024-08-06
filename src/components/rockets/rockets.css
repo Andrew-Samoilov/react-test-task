@@ -1,0 +1,33 @@
+section {
+  margin: 2rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 24px;
+}
+
+.rockets-div {
+  display: flex;
+  gap: 1.25rem;
+}
+
+article {
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 2.5rem;
+}
+
+.rocket-img {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1.25rem;
+}
+
+.div-parameter-values {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 0;
+}
