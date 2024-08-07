@@ -2,6 +2,7 @@
 padding 0;
 margin: 0;
 }
+
 .capabilies-div {
   position: absolute;
   max-width: 453px;
@@ -16,7 +17,7 @@ margin: 0;
   height: 836px;
 }
 
-.swiper-slide img {
+.swiper-slide-img {
   display: block;
   width: 100%;
   height: 100%;
