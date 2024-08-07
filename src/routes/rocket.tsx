@@ -1,13 +1,20 @@
+import './rocket.css'
+import { useParams } from "react-router-dom";
 import Capabilities from "../components/capabilities/capabilities";
 import Header from "../components/header/header";
+import Starbase from "../components/starbase/starbase";
 
 export default function Rocket() {
+    const { rocketId } = useParams();
+    // console.log(rocketId);
+
     return (
-        <div>
+        <div className='starbase-div'>
             <Header />
             <h1>Rocket</h1>
+            <p>Id: {rocketId}</p>
             <Capabilities />
-            <h2>Starbase</h2>
+            <Starbase />
         </div>
     )
 }

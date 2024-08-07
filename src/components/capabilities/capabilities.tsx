@@ -48,7 +48,6 @@ export default function Capabilities() {
             <div className="capabilies-div">
               <h2>Capabilities</h2>
               <p>As the most powerful launch system ever developed, Starship will be able to carry up to 100 people on long-duration, interplanetary flights. Starship will also help enable satellite delivery, the development of a Moon base, and point-to-point transport here on Earth.</p>
-              <p>{name}</p>
             </div>
           </SwiperSlide>
         ))}

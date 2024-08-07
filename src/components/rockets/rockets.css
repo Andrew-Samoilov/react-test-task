@@ -12,7 +12,7 @@ h3 {
   gap: 1.25rem;
 }
 
-article {
+.rocket-article {
   padding: 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 2.5rem;

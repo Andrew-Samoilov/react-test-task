@@ -4,6 +4,7 @@ import Counters from '../components/counters/counters'
 import Hero from '../components/hero/hero'
 import Rockets from '../components/rockets/rockets'
 import Team from '../components/team/team'
+import './home.css'
 
 export default function Home() {
     return (

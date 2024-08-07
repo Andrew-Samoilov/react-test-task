@@ -1,6 +1,6 @@
 .team-section {
   display: grid;
-  gap: 1rem;
+  gap: 1.25rem;
   grid-template-columns: 1fr 1fr 1fr;
   border: none;
   margin: 100px 2rem;
@@ -17,6 +17,10 @@
   flex-direction: column;
   align-items: center;
   text-transform: uppercase;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 2.5rem;
+  padding: 2rem 0;
 }
 
 .team-text {

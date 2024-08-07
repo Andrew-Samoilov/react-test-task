@@ -1,18 +1,17 @@
 .swiper-section{
-padding 0;
-margin: 0;
+  padding 0;
+  margin: 0;
 }
 
 .capabilies-div {
   position: absolute;
   max-width: 453px;
   bottom: 2rem;
-  left: 2rem;;
+  left: 2rem;
 }
 
 .swiper {
   position: relative;
-
   width: 1440px;
   height: 836px;
 }
