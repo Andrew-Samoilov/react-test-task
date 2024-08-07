@@ -17,7 +17,7 @@ export default function Rockets() {
   // console.log(rockets);
 
   return (
-    <section>
+    <section className='rockets-section'>
       <h2>Our Rockets</h2>
       <div className='rockets-div'>
         {rockets.map((rocket) =>

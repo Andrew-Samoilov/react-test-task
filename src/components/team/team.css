@@ -1,0 +1,21 @@
+.team-section {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: none;
+}
+
+.team-text {
+  font-size: 0.75rem;
+}
+
+.team-button {
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  margin-right: 0.75rem;
+  border: none;
+}
+
+.right-button {
+  transform: rotate(180deg);
+}

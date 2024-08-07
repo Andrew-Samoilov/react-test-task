@@ -1,3 +1,4 @@
+import Capabilities from "../components/capabilities/capabilities";
 import Header from "../components/header/header";
 
 export default function Rocket() {
@@ -5,7 +6,7 @@ export default function Rocket() {
         <div>
             <Header />
             <h1>Rocket</h1>
-            <h2>Capabilities</h2>
+            <Capabilities />
             <h2>Starbase</h2>
         </div>
     )

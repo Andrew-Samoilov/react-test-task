@@ -9,6 +9,7 @@ export default function About() {
                 src={space}
                 alt="about us video"
                 width='1321px;'
+                className='about-img'
             ></img>
         </section>
     );

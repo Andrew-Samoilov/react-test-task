@@ -1,7 +1,9 @@
 import About from '../components/about/about'
+import Capabilities from '../components/capabilities/capabilities'
 import Counters from '../components/counters/counters'
 import Hero from '../components/hero/hero'
 import Rockets from '../components/rockets/rockets'
+import Team from '../components/team/team'
 
 export default function Home() {
     return (
@@ -10,8 +12,8 @@ export default function Home() {
             <Rockets />
             <Counters />
             <About />
-            <h2>Team</h2>
-            <h2>Capabilities</h2>
+            <Team />
+            <Capabilities />
         </>
     )
 }
