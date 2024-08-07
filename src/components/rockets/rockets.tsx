@@ -3,7 +3,39 @@ import './rockets.css'
 import rocketImg from '../hero/toy-rocket.gif'
 import { Link } from 'react-router-dom';
 
-const fetcher = (...args) => fetch(...args).then((res) => res.json());
+const fetcher = (...args: [RequestInfo, RequestInit?]) => fetch(...args).then((res) => res.json());
+
+interface Rocket {
+  id: string;
+  name: string;
+  flickr_images: string[];
+  height_w_trunk: {
+    meters: number;
+    feet: number;
+  };
+  diameter: {
+    meters: number;
+    feet: number;
+  };
+  return_payload_vol: {
+    cubic_meters: number;
+    cubic_feet: number;
+  };
+  trunk: {
+    trunk_volume: {
+      cubic_meters: number;
+      cubic_feet: number;
+    }
+  };
+  launch_payload_mass: {
+    kg: number;
+    lb: number;
+  };
+  return_payload_mass: {
+    kg: number;
+    lb: number;
+  };
+}
 
 export default function Rockets() {
   const {
@@ -21,7 +53,7 @@ export default function Rockets() {
     <section className='rockets-section'>
       <h2>Our Rockets</h2>
       <div className='rockets-div'>
-        {rockets.map((rocket) =>
+        {rockets.map((rocket: Rocket) =>
           <article key={rocket.id} className='rocket-article'>
             <Link to={`/rocket/${rocket.id}`}>
               <img

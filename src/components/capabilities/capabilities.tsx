@@ -7,8 +7,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-
-const fetcher = (...args) => fetch(...args).then((res) => res.json());
+const fetcher = (...args: [RequestInfo, RequestInit?]) => fetch(...args).then((res) => res.json());
 
 export default function Capabilities() {
   const {
@@ -21,7 +20,19 @@ export default function Capabilities() {
   if (isValidating) return <div className="Loading">Loading...</div>;
 
   // console.log(rockets);
+  interface Rocket {
+    id: string;
+    name: string;
+    flickr_images: string[];
+  }
 
+  interface MappedData {
+    id: string;
+    name: string;
+    imgUrl: string;
+    index: number;
+  }
+  
   return (
     <section className='swiper-section'>
 
@@ -31,18 +42,18 @@ export default function Capabilities() {
         modules={[Navigation, Pagination]}
         className="mySwiper">
 
-        {rockets.flatMap((rocket) =>
+        {rockets.flatMap((rocket: Rocket) =>
           rocket.flickr_images.map((imgUrl, index) => ({
             id: rocket.id,
             name: rocket.name,
             imgUrl,
             index
           }))
-        ).map(({ id, name, imgUrl, index }) => (
+        ).map(({ id, name, imgUrl }: MappedData) => (
           <SwiperSlide key={`${id}-${imgUrl}`}>
             <img
               src={imgUrl}
-              alt={`${name} ${index + 1}`}
+              alt={name}
               className='swiper-slide-img'
             />
             <div className="capabilies-div">
