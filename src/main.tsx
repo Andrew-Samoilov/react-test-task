@@ -4,10 +4,10 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom"
-import ErrorPage from "./error-page";
-import RocketRout from "./routes/rocketRout";
+import ErrorPage from './routes/error-page'
+import RocketRout from "./routes/rocket-rout";
+import HomeRout from './routes/home-rout';
 import './index.css'
-import HomeRout from './routes/homeRout';
 
 const router = createBrowserRouter([
   {

@@ -1,4 +1,4 @@
-import './rocketRout.css'
+import './rocket-rout.css'
 import { useParams } from "react-router-dom";
 import Capabilities from "../components/capabilities/capabilities";
 import Header from "../components/header/header";
