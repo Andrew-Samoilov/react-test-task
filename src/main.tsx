@@ -5,19 +5,19 @@ import {
   RouterProvider,
 } from "react-router-dom"
 import ErrorPage from "./error-page";
-import Rocket from "./routes/rocket";
+import RocketRout from "./routes/rocketRout";
 import './index.css'
-import Home from './routes/home';
+import HomeRout from './routes/homeRout';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <HomeRout />,
     errorElement: <ErrorPage />
   },
   {
     path: "rocket/:rocketId",
-    element: <Rocket />,
+    element: <RocketRout />,
   },
 ]);
 

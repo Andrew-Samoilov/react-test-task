@@ -1,10 +1,10 @@
-import './rocket.css'
+import './rocketRout.css'
 import { useParams } from "react-router-dom";
 import Capabilities from "../components/capabilities/capabilities";
 import Header from "../components/header/header";
 import Starbase from "../components/starbase/starbase";
 
-export default function Rocket() {
+export default function RocketRout() {
     const { rocketId } = useParams();
     // console.log(rocketId);
 
