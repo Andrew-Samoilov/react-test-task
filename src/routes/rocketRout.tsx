@@ -5,16 +5,16 @@ import Header from "../components/header/header";
 import Starbase from "../components/starbase/starbase";
 
 export default function RocketRout() {
-    const { rocketId } = useParams();
-    // console.log(rocketId);
+  const { rocketId } = useParams();
+  // console.log(rocketId);
 
-    return (
-        <div className='starbase-div'>
-            <Header />
-            <h1>Rocket</h1>
-            <p>Id: {rocketId}</p>
-            <Capabilities />
-            <Starbase />
-        </div>
-    )
+  return (
+    <div className='starbase-div'>
+      <Header />
+      <h1>Rocket</h1>
+      <p>Id: {rocketId}</p>
+      <Capabilities />
+      <Starbase />
+    </div>
+  )
 }

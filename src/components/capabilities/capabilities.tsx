@@ -1,5 +1,6 @@
 import useSWR from 'swr';
 import './capabilities.css'
+import { Rocket, MappedData } from '../../types/Rocket.types'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
@@ -20,19 +21,7 @@ export default function Capabilities() {
   if (isValidating) return <div className="Loading">Loading...</div>;
 
   // console.log(rockets);
-  interface Rocket {
-    id: string;
-    name: string;
-    flickr_images: string[];
-  }
 
-  interface MappedData {
-    id: string;
-    name: string;
-    imgUrl: string;
-    index: number;
-  }
-  
   return (
     <section className='swiper-section'>
 

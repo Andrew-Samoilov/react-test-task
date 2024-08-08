@@ -2,40 +2,9 @@ import useSWR from 'swr';
 import './rockets.css'
 import rocketImg from '../hero/toy-rocket.gif'
 import { Link } from 'react-router-dom';
+import { Rocket } from '../../types/Rocket.types'
 
 const fetcher = (...args: [RequestInfo, RequestInit?]) => fetch(...args).then((res) => res.json());
-
-interface Rocket {
-  id: string;
-  name: string;
-  flickr_images: string[];
-  height_w_trunk: {
-    meters: number;
-    feet: number;
-  };
-  diameter: {
-    meters: number;
-    feet: number;
-  };
-  return_payload_vol: {
-    cubic_meters: number;
-    cubic_feet: number;
-  };
-  trunk: {
-    trunk_volume: {
-      cubic_meters: number;
-      cubic_feet: number;
-    }
-  };
-  launch_payload_mass: {
-    kg: number;
-    lb: number;
-  };
-  return_payload_mass: {
-    kg: number;
-    lb: number;
-  };
-}
 
 export default function Rockets() {
   const {
