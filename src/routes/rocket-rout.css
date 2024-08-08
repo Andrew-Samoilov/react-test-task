@@ -1,7 +1,12 @@
-.starbase-div  {
+.rocket-route-div {
   margin-top: 2rem;
 }
 
-.starbase-div h2 {
+.rocket-route-div h2 {
   text-align: left;
+}
+
+.rocket-route-div > *:first-child  {
+  margin-left: 2rem;
+  margin-right: 2rem;
 }

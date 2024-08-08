@@ -25,4 +25,6 @@ https://darling-conkies-e0dbcb.netlify.app/
 You push to main - Netlify run build. There are no errors - your site is available.
 
 > [!WARNING]
-> In the Flickr design `Contact form` in the title 2 times, is that necessary? (`Logo` and `Home` are also repeated, but this is not so critical)
+> In the Figma design:
+> - `Contact form` in the title 2 times, is that necessary? (`Logo` and `Home` are also repeated, but this is not so critical)
+> - `Desctop2` many duplicating rocket parameters. I can make whatever you need.

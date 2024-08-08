@@ -1,0 +1,17 @@
+.one-rocket-h3 {
+    margin-bottom: 1.75rem;
+}
+
+.one-rocket-article {
+  display: flex;
+  gap: 1.5rem;
+
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 2.5rem;
+}
+
+.p-one-rocket {
+  text-transform: none;
+  font-size: 0.75rem;
+}

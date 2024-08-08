@@ -16,8 +16,6 @@ export default function Rockets() {
   if (error) return <div className='failed'>failed to load</div>;
   if (isValidating) return <div className="Loading">Loading...</div>;
 
-  // console.log(rockets);
-
   return (
     <section className='rockets-section'>
       <h2>Our Rockets</h2>

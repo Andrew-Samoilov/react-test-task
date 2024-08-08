@@ -28,6 +28,7 @@ export interface Rocket {
         kg: number;
         lb: number;
     };
+    description: string;
 }
 
 export interface MappedData {

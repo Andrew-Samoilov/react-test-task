@@ -1,18 +1,15 @@
 import './rocket-rout.css'
-import { useParams } from "react-router-dom";
+
 import Capabilities from "../components/capabilities/capabilities";
 import Header from "../components/header/header";
+import OneRocket from '../components/one-rocket/one-rocket';
 import Starbase from "../components/starbase/starbase";
 
 export default function RocketRout() {
-  const { rocketId } = useParams();
-  // console.log(rocketId);
-
   return (
-    <div className='starbase-div'>
-      <Header />
-      <h1>Rocket</h1>
-      <p>Id: {rocketId}</p>
+    <div className='rocket-route-div'>
+      <Header/>
+      <OneRocket />
       <Capabilities />
       <Starbase />
     </div>
